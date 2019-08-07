@@ -18,13 +18,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="README.md">
+    <None Include="chapter2\README.md">
       <Filter>chapter2</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="string_1.cpp">
-      <Filter>chapter2</Filter>
+    <ClCompile Include="chapter2\1_string.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

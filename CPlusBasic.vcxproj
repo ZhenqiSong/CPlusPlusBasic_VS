@@ -74,8 +74,8 @@
     <IntDir>..\debug</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>..\out</OutDir>
-    <IntDir>..\debug</IntDir>
+    <OutDir>E:\C++\VS_Basic\out</OutDir>
+    <IntDir>E:\C++\VS_Basic\debug</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -130,10 +130,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="README.md" />
+    <None Include="chapter2\README.md" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="string_1.cpp" />
+    <ClCompile Include="chapter2\1_string.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
