@@ -89,3 +89,58 @@ cout << s_a + "," + "world" << endl; // 正确，按照从左到右的顺序， s_a + ","已经
 cout << "hello" + "," + s_b << endl; // 错误，因为前两个时字面量，不能相加
 ```
 ## 处理string对象中的字符
+
+`cctype`头文件中对单个字符的处理
+
+| | |
+| --- | --- |
+| isalnum(c) | 当c是字母或数字时为真 |
+| isalpha(c) | 当c是字母时为真 |
+| iscntrl(c) | 当c是控制字符为真 |
+| isdigit(c) | 数字为真 |
+| islower(c) | 小写为真 |
+| isprint(c) | 可打印为真 |
+| ispunct(c) | 标点字符为真 |
+| isspace(c) | 空白为真，空格，制表符等 |
+| isupper(c) | 大写为真|
+| isxdigit(c) | 十六进制为真|
+| tolower(c) | 转小写 |
+| toupper(c) | 转大写 |
+
+- 使用范围 for 语句遍历字符串 
+```c++
+string str("some thing");
+// 范围 for 与python的for很像了
+// 使用c 接收 每个字符
+for (auto c : str) {
+	cout << c << endl;
+}
+```
+- 使用范围for改变字符串中的字符  
+如果想改变string对象中的字符的值，**必须把循环变量定义成引用类型**。使用引用修改它绑定的字符
+```c++
+string s("Hello World");
+for (auto& c : s) {
+	c = toupper(c);
+}
+cout << s << endl;
+```
+```
+out:
+    HELLO WORLD
+```
+- 只处理一部分字符  
+如果处理一部分字符就不能使用for进行遍历全部，可以使用**下标** 或 **迭代器**。  
+使用下标的类型为`string::size_type`,返回值是该位置上字符的**引用**，类似数组的访问    
+```c++
+for (decltype(s.size()) index = 0;
+	index != s.size() && !isspace(s[index]); index++) {
+	s[index] = toupper(s[index]);
+}
+cout << s << endl;
+``` 
+```
+out:
+    HELLO world
+```
+无论何时用到字符串的下标，都要检查其合法性`0 -> s.size()-1`

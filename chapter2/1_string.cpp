@@ -36,5 +36,23 @@ int main() {
 	cout << s_a + "," + s_b << endl;
 	//cout << "hello" + "," + s_b << endl;
 
+	string str("some thing");
+	for (auto c : str) {
+		cout << c << endl;
+	}
+
+	string s("Hello World");
+	for (auto& c : s) {
+		c = toupper(c);
+	}
+	cout << s << endl;
+
+	s = "hello world";
+	for (decltype(s.size()) index = 0;
+		index != s.size() && !isspace(s[index]); index++) {
+		s[index] = toupper(s[index]);
+	}
+	cout << s << endl;
+
 	return 0;
 }
