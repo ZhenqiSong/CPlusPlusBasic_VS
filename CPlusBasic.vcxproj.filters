@@ -22,12 +22,16 @@
       <Filter>chapter2</Filter>
     </None>
     <None Include="chapter2\2_vecotr.md" />
+    <None Include="chapter2\3_迭代器.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="chapter2\1_string.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="chapter2\2_vector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter2\3_iterator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

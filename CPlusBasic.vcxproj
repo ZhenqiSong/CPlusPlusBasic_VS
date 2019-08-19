@@ -131,13 +131,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="chapter2\2_vecotr.md" />
+    <None Include="chapter2\3_迭代器.md" />
     <None Include="chapter2\README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="chapter2\1_string.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="chapter2\2_vector.cpp" />
+    <ClCompile Include="chapter2\2_vector.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="chapter2\3_iterator.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
