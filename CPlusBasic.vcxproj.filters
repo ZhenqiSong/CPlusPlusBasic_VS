@@ -23,6 +23,7 @@
     </None>
     <None Include="chapter2\2_vecotr.md" />
     <None Include="chapter2\3_迭代器.md" />
+    <None Include="chapter2\4_数组.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="chapter2\1_string.cpp">
@@ -32,6 +33,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="chapter2\3_iterator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter2\4_list.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
