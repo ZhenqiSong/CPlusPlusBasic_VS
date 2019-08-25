@@ -134,6 +134,7 @@
     <None Include="chapter2\3_迭代器.md" />
     <None Include="chapter2\4_数组.md" />
     <None Include="chapter2\README.md" />
+    <None Include="chapter3\README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="chapter2\1_string.cpp">
@@ -145,7 +146,10 @@
     <ClCompile Include="chapter2\3_iterator.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="chapter2\4_list.cpp" />
+    <ClCompile Include="chapter2\4_list.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="chapter3\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
