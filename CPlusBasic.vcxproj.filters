@@ -25,6 +25,7 @@
     <None Include="chapter2\3_迭代器.md" />
     <None Include="chapter2\4_数组.md" />
     <None Include="chapter3\README.md" />
+    <None Include="chapter4\README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="chapter2\1_string.cpp">
@@ -40,6 +41,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="chapter3\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter4\1_condition.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter4\2_error.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
