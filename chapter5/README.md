@@ -382,3 +382,4 @@ F *f1(int); // 显示指定返回类型是指向函数的指针
 auto f1(int) -> int(*)(int *, int); //后置返回类型
 dectype(a) *f1(int); //使用decltype获取函数类型
 ```
+
